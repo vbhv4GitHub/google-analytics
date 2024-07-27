@@ -8,7 +8,7 @@ export default function Contact() {
         <h1 className='text-3xl font-bold text-center mt-10'>Contact Us</h1>
         <p className='text-center mt-4'>This is the contact page.</p>
         <div className='mt-10 max-w-md mx-auto'>
-          <form className='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4'>
+          <form id='contact-form' className='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4'>
             <div className='mb-4'>
               <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='name'>
                 Name
@@ -55,8 +55,9 @@ export default function Contact() {
             </div>
             <div className='flex items-center justify-between'>
               <button
-                className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+                id='contact-form-cta'
                 type='button'
+                className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
               >
                 Send
               </button>
